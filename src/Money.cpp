@@ -1,8 +1,7 @@
 #include "Money.hpp"
 
-Money::Money(const int amount) : _amount(amount) {
-}
+Money::Money(const int amount) : _amount(amount) {}
 
-int Money::getAmount() const {
+int Money::amount() const {
   return this->_amount;
 }

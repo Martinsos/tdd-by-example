@@ -5,5 +5,5 @@
 TEST_CASE("Money stores correct amount.") {
   const int moneyAmount = 5;
   const Money money(moneyAmount);
-  REQUIRE(money.getAmount() == moneyAmount);
+  REQUIRE(money.amount() == moneyAmount);
 }
