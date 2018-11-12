@@ -4,7 +4,6 @@ load(":macros.bzl", "src_target_test")
 cc_library(
     name = "catch-main",
     srcs = ["main.cpp"],
-    copts = ["-Itest/vendor/catch2"],
     deps = [
       "//test/vendor/catch2"
     ]

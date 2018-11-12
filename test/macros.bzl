@@ -4,7 +4,7 @@ def src_target_test(target_name):
     native.cc_test(
         name = target_name,
         srcs = [target_name + ".test.cpp"],
-        copts = ["-Itest/vendor/catch2/", "-Isrc/"],
+        copts = ["-Isrc/"],
         deps = [
             "//test/vendor/catch2",
             "catch-main",
